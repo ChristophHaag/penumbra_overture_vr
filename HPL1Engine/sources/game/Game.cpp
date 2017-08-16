@@ -455,7 +455,7 @@ namespace hpl {
         for (vr::TrackedDeviceIndex_t unDevice = 0; unDevice < vr::k_unMaxTrackedDeviceCount; unDevice++)
         {
           vr::VRControllerState_t state;
-          if (vr_hmd->GetControllerState(unDevice, &state))
+          if (vr_hmd->GetControllerState(unDevice, &state, sizeof(state)))
           {
             // do wut wit dis
           }

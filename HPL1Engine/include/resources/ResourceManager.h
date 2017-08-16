@@ -21,6 +21,7 @@
 
 #include <map>
 #include "system/SystemTypes.h"
+#undef DestroyAll // WTF
 
 namespace hpl {
 

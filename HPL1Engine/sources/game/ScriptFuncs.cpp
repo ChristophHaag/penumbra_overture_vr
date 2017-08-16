@@ -170,7 +170,7 @@ namespace hpl {
 	**/
 	static void __stdcall SetAmbientColor(float afR, float afG, float afB)
 	{
-		gpGraphics->GetRenderer3D()->SetAmbientColor(cColor(max(0.0f, afR - 0.0625f), max(0.0f, afG - 0.0625f),max(0.0f, afB - 0.0625f),1.0f));
+		gpGraphics->GetRenderer3D()->SetAmbientColor(cColor(std::max(0.0f, afR - 0.0625f), std::max(0.0f, afG - 0.0625f),std::max(0.0f, afB - 0.0625f),1.0f));
 	}
 	SCRIPT_DEFINE_FUNC_3(void, SetAmbientColor, float, float, float)
 

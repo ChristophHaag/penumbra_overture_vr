@@ -53,6 +53,8 @@
 
 #include <clocale>
 
+#include <unistd.h> // symlink
+
 extern int hplMain(const hpl::tString &asCommandLine);
 
 #ifdef WIN32
